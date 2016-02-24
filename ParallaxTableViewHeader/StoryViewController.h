@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoryViewController : UIViewController
+@interface StoryViewController : UITableViewController
 
 
 @end

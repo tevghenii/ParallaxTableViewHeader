@@ -16,6 +16,7 @@
 		19B5CC2119FCDD7D00340B60 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B5CC2019FCDD7D00340B60 /* ParallaxHeaderView.m */; };
 		19B5CC2419FCDDC500340B60 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B5CC2319FCDDC500340B60 /* UIImage+ImageEffects.m */; };
 		19B5CC2A19FCF12E00340B60 /* StoryCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B5CC2919FCF12E00340B60 /* StoryCommentCell.m */; };
+		B76F29D11C7DE80B000A9484 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F29D01C7DE80B000A9484 /* FeedTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		19B5CC2319FCDDC500340B60 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		19B5CC2819FCF12D00340B60 /* StoryCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCommentCell.h; sourceTree = "<group>"; };
 		19B5CC2919FCF12E00340B60 /* StoryCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCommentCell.m; sourceTree = "<group>"; };
+		B76F29CF1C7DE80B000A9484 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		B76F29D01C7DE80B000A9484 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				19B5CC0819FCDCC600340B60 /* LaunchScreen.xib */,
 				19B5CC2519FCE30400340B60 /* Resources */,
 				19B5CBF919FCDCC600340B60 /* Supporting Files */,
+				B76F29CF1C7DE80B000A9484 /* FeedTableViewController.h */,
+				B76F29D01C7DE80B000A9484 /* FeedTableViewController.m */,
 			);
 			path = ParallaxTableViewHeader;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				19B5CC2119FCDD7D00340B60 /* ParallaxHeaderView.m in Sources */,
 				19B5CC2419FCDDC500340B60 /* UIImage+ImageEffects.m in Sources */,
 				19B5CC0219FCDCC600340B60 /* StoryViewController.m in Sources */,
+				B76F29D11C7DE80B000A9484 /* FeedTableViewController.m in Sources */,
 				19B5CBFF19FCDCC600340B60 /* AppDelegate.m in Sources */,
 				19B5CBFC19FCDCC600340B60 /* main.m in Sources */,
 				19B5CC2A19FCF12E00340B60 /* StoryCommentCell.m in Sources */,
