@@ -12,7 +12,7 @@
 
 @interface StoryViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
-
+@property (nonatomic) UIView *tabsView;
 @property (nonatomic) NSDictionary *story;
 @end
 
@@ -33,6 +33,9 @@
     headerView.headerTitleLabel.text = self.story[@"story"];
     
     [self.mainTableView setTableHeaderView:headerView];
+    
+    self.tabsView = [self createTabsView];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -46,6 +49,19 @@
     return YES;
 }
 
+#pragma mark -
+#pragma mark Helpers
+
+- (UIView *)createTabsView {
+    UIView *tabsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _mainTableView.frame.size.width, 45)];
+    tabsView.backgroundColor = [UIColor whiteColor];
+    
+    UISegmentedControl *tabsSegmentedControl = [[UISegmentedControl alloc] initWithItems:@[ @"Feed", @"Photos", @"Video" ]];
+    tabsSegmentedControl.center = CGPointMake(CGRectGetMidX(tabsView.bounds), CGRectGetMidY(tabsView.bounds));
+    [tabsView addSubview:tabsSegmentedControl];
+    
+    return tabsView;
+}
 
 #pragma mark -
 #pragma mark UITableViewDatasource
@@ -72,6 +88,14 @@
     NSDictionary *comment = self.story[kCommentsKey][indexPath.row];
     [(StoryCommentCell *)cell  configureCommentCellForComment:comment];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 45.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return _tabsView;
 }
 
 #pragma mark -
